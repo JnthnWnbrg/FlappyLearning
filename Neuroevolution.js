@@ -17,7 +17,7 @@ var Neuroevolution = function (options) {
 		 */
 		activation: function (a) {
 			ap = (-a) / 1;
-			return (1 / (1 + Math.exp(ap)))
+			return (Math.abs(a)+a)/2 // (1 / (1 + Math.exp(ap)))
 		},
 
 		/**
